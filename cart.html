@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DealMart - Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">DealMart</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="wishlist.html">Wishlist</a>
+            <a href="products.html">Shop</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Your Cart</h1>
+        <div id="cart-items"></div>
+        <p id="total-price">Total: $0.00</p>
+        <button id="checkout-button">Checkout</button>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 DealMart. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        renderCart(); // Render cart items on page load
+    </script>
+</body>
+</html>

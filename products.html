@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DealMart - Products</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">DealMart</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="cart.html">Cart</a>
+            <a href="wishlist.html">Wishlist</a>
+            <a href="#" id="login-link">Login</a>
+            <!-- <a href="#">Login</a> -->
+        </nav>
+    </header>
+
+    <main>
+        <h1>Our Products</h1>
+         <!-- Search Bar -->
+         <input type="text" id="search-bar" placeholder="Search products..." onkeyup="filterProducts()" />
+         
+          <!-- Category Filter -->
+        <select id="category-filter" onchange="filterProducts()">
+            <option value="">Select Category</option>
+            <option value="electronics">Electronics</option>
+            <option value="fashion">Fashion</option>
+            <option value="accessories">Accessories</option>
+        </select>
+
+        <div id="product-list" class="product-grid"></div>
+    </main>
+
+    <footer style="margin-top: 254px;">
+        <p>&copy; 2024 DealMart. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
